@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editText_mssv"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="MSSV" />
+
+        <EditText
+            android:id="@+id/editText_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Họ tên" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giới tính" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nam" />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nữ" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editText_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editText_phone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Số điện thoại"
+            android:inputType="phone" />
+
+        <!-- Button to toggle CalendarView visibility -->
+        <Button
+            android:id="@+id/button_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn ngày sinh" />
+
+        <!-- CalendarView for date selection, hidden by default -->
+        <CalendarView
+            android:id="@+id/calendarView_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nơi ở hiện tại" />
+
+        <Spinner
+            android:id="@+id/spinner_city"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/city_array"
+            android:prompt="@string/prompt_city" />
+
+        <Spinner
+            android:id="@+id/spinner_district"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/district_array"
+            android:prompt="@string/prompt_district" />
+
+        <Spinner
+            android:id="@+id/spinner_ward"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/ward_array"
+            android:prompt="@string/prompt_ward" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sở thích" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox_sports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thể thao" />
+
+            <CheckBox
+                android:id="@+id/checkbox_movies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Điện ảnh" />
+
+            <CheckBox
+                android:id="@+id/checkbox_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Âm nhạc" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkbox_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tôi đồng ý với các điều khoản" />
+
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+    </LinearLayout>
+</ScrollView>

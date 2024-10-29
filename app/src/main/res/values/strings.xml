@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">bai 7.1</string>
+    <string name="prompt_ward">Phường/Xã</string>
+    <string name="prompt_district">Quận/Huyện</string>
+    <string name="prompt_city">Tỉnh/Thành</string>
+
+    <!-- Spinner options for Tỉnh/Thành -->
+    <string-array name="city_array">
+        <item>Hà Nội</item>
+        <item>TP. Hồ Chí Minh</item>
+        <item>Đà Nẵng</item>
+        <item>Hải Phòng</item>
+        <item>Đồng Nai</item>
+        <!-- Add more cities/provinces here -->
+    </string-array>
+
+    <!-- Spinner options for Quận/Huyện (sample districts, e.g., in Hà Nội) -->
+    <string-array name="district_array">
+        <item>Ba Đình</item>
+        <item>Hoàn Kiếm</item>
+        <item>Đống Đa</item>
+        <item>Hai Bà Trưng</item>
+        <item>Thanh Xuân</item>
+        <!-- Add more districts here -->
+    </string-array>
+
+    <!-- Spinner options for Phường/Xã (sample wards, e.g., in Ba Đình) -->
+    <string-array name="ward_array">
+        <item>Phường Điện Biên</item>
+        <item>Phường Kim Mã</item>
+        <item>Phường Ngọc Hà</item>
+        <item>Phường Trúc Bạch</item>
+        <item>Phường Giảng Võ</item>
+        <!-- Add more wards here -->
+    </string-array>
+</resources>
